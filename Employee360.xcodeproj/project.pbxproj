@@ -12,6 +12,7 @@
 		E29206BB2052FD130051940E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E29206B92052FD130051940E /* Main.storyboard */; };
 		E29206BD2052FD130051940E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E29206BC2052FD130051940E /* Assets.xcassets */; };
 		E29206C02052FD130051940E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E29206BE2052FD130051940E /* LaunchScreen.storyboard */; };
+		E29206C92053154D0051940E /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E29206C82053154D0051940E /* HomeViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +23,7 @@
 		E29206BC2052FD130051940E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E29206BF2052FD130051940E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E29206C12052FD130051940E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E29206C82053154D0051940E /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,14 +56,23 @@
 		E29206B42052FD120051940E /* Employee360 */ = {
 			isa = PBXGroup;
 			children = (
+				E29206C72052FE900051940E /* LoginAndHome */,
 				E29206B52052FD130051940E /* AppDelegate.swift */,
 				E29206B72052FD130051940E /* ViewController.swift */,
 				E29206B92052FD130051940E /* Main.storyboard */,
+				E29206C82053154D0051940E /* HomeViewController.swift */,
 				E29206BC2052FD130051940E /* Assets.xcassets */,
 				E29206BE2052FD130051940E /* LaunchScreen.storyboard */,
 				E29206C12052FD130051940E /* Info.plist */,
 			);
 			path = Employee360;
+			sourceTree = "<group>";
+		};
+		E29206C72052FE900051940E /* LoginAndHome */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = LoginAndHome;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,6 +149,7 @@
 			files = (
 				E29206B82052FD130051940E /* ViewController.swift in Sources */,
 				E29206B62052FD130051940E /* AppDelegate.swift in Sources */,
+				E29206C92053154D0051940E /* HomeViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
