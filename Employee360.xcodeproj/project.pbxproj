@@ -7,15 +7,23 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D49C87455FF27051A6C42432 /* Pods_Employee360.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 94A0215C0F8561772A40A52B /* Pods_Employee360.framework */; };
+		E22699C220533A0800ED360D /* LeftMenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E22699C120533A0800ED360D /* LeftMenuViewController.swift */; };
 		E29206B62052FD130051940E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E29206B52052FD130051940E /* AppDelegate.swift */; };
 		E29206B82052FD130051940E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E29206B72052FD130051940E /* ViewController.swift */; };
 		E29206BB2052FD130051940E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E29206B92052FD130051940E /* Main.storyboard */; };
 		E29206BD2052FD130051940E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E29206BC2052FD130051940E /* Assets.xcassets */; };
 		E29206C02052FD130051940E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E29206BE2052FD130051940E /* LaunchScreen.storyboard */; };
 		E29206C92053154D0051940E /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E29206C82053154D0051940E /* HomeViewController.swift */; };
+		E29206D7205334610051940E /* SSASideMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = E29206D6205334610051940E /* SSASideMenu.swift */; };
+		E29206D9205334C10051940E /* RightMenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E29206D8205334C10051940E /* RightMenuViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		7E13099F955A121C173925D7 /* Pods-Employee360.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Employee360.release.xcconfig"; path = "Pods/Target Support Files/Pods-Employee360/Pods-Employee360.release.xcconfig"; sourceTree = "<group>"; };
+		94A0215C0F8561772A40A52B /* Pods_Employee360.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Employee360.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E1F8C5B611E7DCB8336FE912 /* Pods-Employee360.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Employee360.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Employee360/Pods-Employee360.debug.xcconfig"; sourceTree = "<group>"; };
+		E22699C120533A0800ED360D /* LeftMenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeftMenuViewController.swift; sourceTree = "<group>"; };
 		E29206B22052FD120051940E /* Employee360.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Employee360.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E29206B52052FD130051940E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E29206B72052FD130051940E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -24,6 +32,8 @@
 		E29206BF2052FD130051940E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E29206C12052FD130051940E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E29206C82053154D0051940E /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		E29206D6205334610051940E /* SSASideMenu.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SSASideMenu.swift; sourceTree = "<group>"; };
+		E29206D8205334C10051940E /* RightMenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RightMenuViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,17 +41,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D49C87455FF27051A6C42432 /* Pods_Employee360.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		5294E95DE2D0299B89D5F79D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				94A0215C0F8561772A40A52B /* Pods_Employee360.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		C5A7696B83236C2205BFD5BF /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				E1F8C5B611E7DCB8336FE912 /* Pods-Employee360.debug.xcconfig */,
+				7E13099F955A121C173925D7 /* Pods-Employee360.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		E29206A92052FD120051940E = {
 			isa = PBXGroup;
 			children = (
 				E29206B42052FD120051940E /* Employee360 */,
 				E29206B32052FD120051940E /* Products */,
+				C5A7696B83236C2205BFD5BF /* Pods */,
+				5294E95DE2D0299B89D5F79D /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -56,6 +86,7 @@
 		E29206B42052FD120051940E /* Employee360 */ = {
 			isa = PBXGroup;
 			children = (
+				E29206D3205327910051940E /* SideMenu */,
 				E29206C72052FE900051940E /* LoginAndHome */,
 				E29206B52052FD130051940E /* AppDelegate.swift */,
 				E29206B72052FD130051940E /* ViewController.swift */,
@@ -75,6 +106,16 @@
 			path = LoginAndHome;
 			sourceTree = "<group>";
 		};
+		E29206D3205327910051940E /* SideMenu */ = {
+			isa = PBXGroup;
+			children = (
+				E29206D6205334610051940E /* SSASideMenu.swift */,
+				E29206D8205334C10051940E /* RightMenuViewController.swift */,
+				E22699C120533A0800ED360D /* LeftMenuViewController.swift */,
+			);
+			path = SideMenu;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -82,9 +123,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = E29206C42052FD130051940E /* Build configuration list for PBXNativeTarget "Employee360" */;
 			buildPhases = (
+				E318DE5AFE4B14A36688CD9A /* [CP] Check Pods Manifest.lock */,
 				E29206AE2052FD120051940E /* Sources */,
 				E29206AF2052FD120051940E /* Frameworks */,
 				E29206B02052FD120051940E /* Resources */,
+				D7FE8DE313A9D8E79C98F4F6 /* [CP] Embed Pods Frameworks */,
+				3B2F85248E2F1F04BAE0FFA7 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -142,14 +186,65 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		3B2F85248E2F1F04BAE0FFA7 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Employee360/Pods-Employee360-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D7FE8DE313A9D8E79C98F4F6 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Employee360/Pods-Employee360-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E318DE5AFE4B14A36688CD9A /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		E29206AE2052FD120051940E /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				E29206B82052FD130051940E /* ViewController.swift in Sources */,
+				E29206D7205334610051940E /* SSASideMenu.swift in Sources */,
+				E22699C220533A0800ED360D /* LeftMenuViewController.swift in Sources */,
 				E29206B62052FD130051940E /* AppDelegate.swift in Sources */,
 				E29206C92053154D0051940E /* HomeViewController.swift in Sources */,
+				E29206D9205334C10051940E /* RightMenuViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -284,6 +379,7 @@
 		};
 		E29206C52052FD130051940E /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E1F8C5B611E7DCB8336FE912 /* Pods-Employee360.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -300,6 +396,7 @@
 		};
 		E29206C62052FD130051940E /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7E13099F955A121C173925D7 /* Pods-Employee360.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;

@@ -13,11 +13,17 @@ class ViewController: UIViewController {
     @IBOutlet weak var loginButton: UIButton!
     @IBOutlet weak var loginUIView: UIView!
     
-    
     @IBAction func loginButtonAction(_ sender: Any) {
-        if let homeViewController = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "HomeViewController") as? HomeViewController {
-            self.present(homeViewController, animated: true, completion: nil)
-        }
+        let storyboard = UIStoryboard(name: "Main", bundle: nil)
+        let homeViewController = storyboard.instantiateViewController(withIdentifier: "HomeViewController") as! HomeViewController
+        
+        let sideMenu = SSASideMenu(contentViewController: UINavigationController(rootViewController: homeViewController), leftMenuViewController: LeftMenuViewController())
+//        sideMenu.backgroundImage = UIImage(named: "Background.jpg")
+        sideMenu.configure(SSASideMenu.MenuViewEffect(fade: true, scale: true, scaleBackground: false))
+        sideMenu.configure(SSASideMenu.ContentViewEffect(alpha: 1.0, scale: 0.7))
+        sideMenu.configure(SSASideMenu.ContentViewShadow(enabled: true, color: UIColor.black, opacity: 0.6, radius: 6.0))
+        
+        self.present(sideMenu, animated: true, completion: nil)
         
     }
     
