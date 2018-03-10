@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="ipad10_5" orientation="landscape">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--PayrollViewController-->
+        <scene sceneID="uqZ-Ki-Ph6">
+            <objects>
+                <viewController restorationIdentifier="PayrollViewController" storyboardIdentifier="PayrollViewController" title="PayrollViewController" id="uQi-b1-Q7x" customClass="PayrollViewController" customModule="Employee360" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="KhY-97-EiC">
+                        <rect key="frame" x="0.0" y="0.0" width="1112" height="834"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Employee ID:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TvE-aw-acV">
+                                <rect key="frame" x="40" y="60" width="149" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="149" id="CLX-6T-IrL"/>
+                                    <constraint firstAttribute="height" constant="30" id="LJt-zS-QYc"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="p96-9g-obe">
+                                <rect key="frame" x="197" y="60" width="100" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="YRL-uO-YrZ"/>
+                                    <constraint firstAttribute="width" constant="100" id="sQQ-Pt-kgm"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="oCD-vy-F0u">
+                                <rect key="frame" x="40" y="135" width="300" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="300" id="LHu-yk-CQs"/>
+                                    <constraint firstAttribute="height" constant="50" id="p5B-nY-LTz"/>
+                                </constraints>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Rtl-Sp-veE">
+                                <rect key="frame" x="360" y="135" width="192" height="50"/>
+                                <color key="backgroundColor" red="1" green="0.5" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="bMG-Xd-ZI8"/>
+                                    <constraint firstAttribute="width" constant="192" id="rci-qj-hoI"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
+                                <state key="normal" title="Download Form 16">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="downloadForm16BtnAction:" destination="uQi-b1-Q7x" eventType="touchUpInside" id="DCJ-2w-snS"/>
+                                </connections>
+                            </button>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="hOc-yh-lVa">
+                                <rect key="frame" x="40" y="225" width="300" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="Hy0-oa-fCv"/>
+                                    <constraint firstAttribute="width" constant="300" id="fEm-Ph-XAP"/>
+                                </constraints>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="89z-Ph-1bd">
+                                <rect key="frame" x="360" y="225" width="192" height="50"/>
+                                <color key="backgroundColor" red="1" green="0.5" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
+                                <state key="normal" title="Download Payslip">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ldw-ix-vdQ">
+                                <rect key="frame" x="760" y="135" width="284" height="50"/>
+                                <color key="backgroundColor" red="1" green="0.5" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="P2u-WR-UN0"/>
+                                    <constraint firstAttribute="width" constant="284" id="nw1-Mc-jWM"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
+                                <state key="normal" title="Know Your PF Balance">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.0" green="0.7725490196" blue="0.80392156859999997" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="p96-9g-obe" firstAttribute="leading" secondItem="TvE-aw-acV" secondAttribute="trailing" constant="8" id="2yB-pj-Sau"/>
+                            <constraint firstItem="89z-Ph-1bd" firstAttribute="top" secondItem="Rtl-Sp-veE" secondAttribute="bottom" constant="40" id="3Sc-hT-HwM"/>
+                            <constraint firstItem="hOc-yh-lVa" firstAttribute="leading" secondItem="5fV-vj-WBb" secondAttribute="leading" constant="40" id="Ajo-0V-mis"/>
+                            <constraint firstItem="oCD-vy-F0u" firstAttribute="top" secondItem="TvE-aw-acV" secondAttribute="bottom" constant="45" id="DNo-LW-6CZ"/>
+                            <constraint firstItem="oCD-vy-F0u" firstAttribute="leading" secondItem="5fV-vj-WBb" secondAttribute="leading" constant="40" id="HOV-1D-czm"/>
+                            <constraint firstItem="Rtl-Sp-veE" firstAttribute="leading" secondItem="oCD-vy-F0u" secondAttribute="trailing" constant="20" id="JT6-Df-qIE"/>
+                            <constraint firstItem="5fV-vj-WBb" firstAttribute="trailing" secondItem="ldw-ix-vdQ" secondAttribute="trailing" constant="68" id="L5y-vK-36O"/>
+                            <constraint firstItem="Rtl-Sp-veE" firstAttribute="top" secondItem="5fV-vj-WBb" secondAttribute="top" constant="115" id="RNT-4i-Cdh"/>
+                            <constraint firstItem="p96-9g-obe" firstAttribute="top" secondItem="5fV-vj-WBb" secondAttribute="top" constant="40" id="Uxa-0B-bK8"/>
+                            <constraint firstItem="89z-Ph-1bd" firstAttribute="leading" secondItem="hOc-yh-lVa" secondAttribute="trailing" constant="20" id="YZP-ys-yQy"/>
+                            <constraint firstItem="hOc-yh-lVa" firstAttribute="top" secondItem="oCD-vy-F0u" secondAttribute="bottom" constant="40" id="dL3-H3-iXr"/>
+                            <constraint firstItem="TvE-aw-acV" firstAttribute="leading" secondItem="5fV-vj-WBb" secondAttribute="leading" constant="40" id="dOA-jh-gzw"/>
+                            <constraint firstItem="ldw-ix-vdQ" firstAttribute="top" secondItem="Rtl-Sp-veE" secondAttribute="top" id="nzs-AR-9iA"/>
+                            <constraint firstItem="TvE-aw-acV" firstAttribute="top" secondItem="5fV-vj-WBb" secondAttribute="top" constant="40" id="sEj-Rm-sgm"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="5fV-vj-WBb"/>
+                    </view>
+                    <connections>
+                        <outlet property="downloadForm16" destination="Rtl-Sp-veE" id="nzH-0S-wsR"/>
+                        <outlet property="employeeId" destination="p96-9g-obe" id="nBL-h0-BRk"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Yqz-QZ-tqG" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="14.568345323741008" y="102.87769784172663"/>
+        </scene>
+    </scenes>
+</document>

@@ -10,10 +10,12 @@
 		D49C87455FF27051A6C42432 /* Pods_Employee360.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 94A0215C0F8561772A40A52B /* Pods_Employee360.framework */; };
 		E21C1A3E20540BC700AFBB54 /* hAndAStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E21C1A3D20540BC700AFBB54 /* hAndAStoryboard.storyboard */; };
 		E21C1A4020540C0200AFBB54 /* healthAndFitnessViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E21C1A3F20540C0200AFBB54 /* healthAndFitnessViewController.swift */; };
+		E21C1A432054253F00AFBB54 /* PayrollStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E21C1A422054253F00AFBB54 /* PayrollStoryboard.storyboard */; };
 		E22699C220533A0800ED360D /* LeftMenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E22699C120533A0800ED360D /* LeftMenuViewController.swift */; };
 		E22699C5205348A700ED360D /* NetworkController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E22699C4205348A700ED360D /* NetworkController.swift */; };
 		E22699C820537B6300ED360D /* Events.swift in Sources */ = {isa = PBXBuildFile; fileRef = E22699C720537B6300ED360D /* Events.swift */; };
 		E22699CA20537E4D00ED360D /* Employee.swift in Sources */ = {isa = PBXBuildFile; fileRef = E22699C920537E4D00ED360D /* Employee.swift */; };
+		E23E7D2B205449C500F11F36 /* PayrollViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E23E7D2A205449C500F11F36 /* PayrollViewController.swift */; };
 		E29206B62052FD130051940E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E29206B52052FD130051940E /* AppDelegate.swift */; };
 		E29206B82052FD130051940E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E29206B72052FD130051940E /* ViewController.swift */; };
 		E29206BB2052FD130051940E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E29206B92052FD130051940E /* Main.storyboard */; };
@@ -35,10 +37,12 @@
 		E1F8C5B611E7DCB8336FE912 /* Pods-Employee360.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Employee360.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Employee360/Pods-Employee360.debug.xcconfig"; sourceTree = "<group>"; };
 		E21C1A3D20540BC700AFBB54 /* hAndAStoryboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = hAndAStoryboard.storyboard; sourceTree = "<group>"; };
 		E21C1A3F20540C0200AFBB54 /* healthAndFitnessViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = healthAndFitnessViewController.swift; sourceTree = "<group>"; };
+		E21C1A422054253F00AFBB54 /* PayrollStoryboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = PayrollStoryboard.storyboard; sourceTree = "<group>"; };
 		E22699C120533A0800ED360D /* LeftMenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeftMenuViewController.swift; sourceTree = "<group>"; };
 		E22699C4205348A700ED360D /* NetworkController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkController.swift; sourceTree = "<group>"; };
 		E22699C720537B6300ED360D /* Events.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Events.swift; sourceTree = "<group>"; };
 		E22699C920537E4D00ED360D /* Employee.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Employee.swift; sourceTree = "<group>"; };
+		E23E7D2A205449C500F11F36 /* PayrollViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PayrollViewController.swift; sourceTree = "<group>"; };
 		E29206B22052FD120051940E /* Employee360.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Employee360.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E29206B52052FD130051940E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E29206B72052FD130051940E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -94,6 +98,15 @@
 			path = "Health and Fitness";
 			sourceTree = "<group>";
 		};
+		E21C1A412054248B00AFBB54 /* Payroll */ = {
+			isa = PBXGroup;
+			children = (
+				E21C1A422054253F00AFBB54 /* PayrollStoryboard.storyboard */,
+				E23E7D2A205449C500F11F36 /* PayrollViewController.swift */,
+			);
+			path = Payroll;
+			sourceTree = "<group>";
+		};
 		E22699C3205347DD00ED360D /* Services */ = {
 			isa = PBXGroup;
 			children = (
@@ -132,6 +145,7 @@
 		E29206B42052FD120051940E /* Employee360 */ = {
 			isa = PBXGroup;
 			children = (
+				E21C1A412054248B00AFBB54 /* Payroll */,
 				E29206B52052FD130051940E /* AppDelegate.swift */,
 				E29206B92052FD130051940E /* Main.storyboard */,
 				E2F5DA752053C7B700BB15CF /* Common */,
@@ -252,6 +266,7 @@
 				E29206C02052FD130051940E /* LaunchScreen.storyboard in Resources */,
 				E21C1A3E20540BC700AFBB54 /* hAndAStoryboard.storyboard in Resources */,
 				E29206BD2052FD130051940E /* Assets.xcassets in Resources */,
+				E21C1A432054253F00AFBB54 /* PayrollStoryboard.storyboard in Resources */,
 				E29206BB2052FD130051940E /* Main.storyboard in Resources */,
 				E2F5DA722053B5A500BB15CF /* ProfileStoryboard.storyboard in Resources */,
 			);
@@ -318,6 +333,7 @@
 				E22699C220533A0800ED360D /* LeftMenuViewController.swift in Sources */,
 				E29206B62052FD130051940E /* AppDelegate.swift in Sources */,
 				E22699C820537B6300ED360D /* Events.swift in Sources */,
+				E23E7D2B205449C500F11F36 /* PayrollViewController.swift in Sources */,
 				E29206C92053154D0051940E /* HomeViewController.swift in Sources */,
 				E22699C5205348A700ED360D /* NetworkController.swift in Sources */,
 				E2F5DA772053C7D600BB15CF /* UIViewControllerExtension.swift in Sources */,

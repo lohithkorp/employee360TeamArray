@@ -113,12 +113,11 @@ extension LeftMenuViewController: UITableViewDelegate, UITableViewDataSource {
             break
             
         case 3:
-            
-//            let storyboard = UIStoryboard(name: "Main", bundle: nil)
-//            let mapViewController = storyboard.instantiateViewController(withIdentifier: "MapViewControllerID")  as! MapViewController
-//
-//            sideMenuViewController?.contentViewController = UINavigationController(rootViewController: mapViewController)
-//            sideMenuViewController?.hideMenuViewController()
+            let storyboard = UIStoryboard(name: "PayrollStoryboard", bundle: nil)
+            let payrollViewController = storyboard.instantiateViewController(withIdentifier: "PayrollViewController")  as! PayrollViewController
+
+            sideMenuViewController?.contentViewController = UINavigationController(rootViewController: payrollViewController)
+            sideMenuViewController?.hideMenuViewController()
             break
             
         case 4:

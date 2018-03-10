@@ -41,4 +41,20 @@ class NetworkController {
         }
     }
     
+    func getPdfFile(url: String, callback: @escaping (Result<Data>) -> ()) {
+        
+        var myRequest = URLRequest(url: URL(string: url)!)
+        myRequest.httpMethod = "GET"
+        myRequest.setValue("application/x-www-form-urlencoded", forHTTPHeaderField: "Content-Type")
+        
+        Alamofire.request(myRequest).responseData { response in
+            switch response.result {
+            case .success(let fileData):
+                print("\(fileData)")
+                callback(.success(fileData))
+            case .failure(let error):
+                callback(.failure(error))
+            }
+        }
+    }
 }

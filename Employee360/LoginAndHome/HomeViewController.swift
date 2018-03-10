@@ -24,7 +24,7 @@ class HomeViewController: UIViewController, UITableViewDelegate, UITableViewData
     
     var cell: UITableViewCell!
     
-    let images = ["Event1", "Event2", "Hackathon_groupfie", "Event3", "Event1"]
+    let images = ["Event1", "Event2", "Hackathon_groupfie", "Event3", "cake_hackathon"]
     
     @IBOutlet weak var tableView: UITableView!
     
