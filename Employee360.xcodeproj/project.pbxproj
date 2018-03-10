@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		D49C87455FF27051A6C42432 /* Pods_Employee360.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 94A0215C0F8561772A40A52B /* Pods_Employee360.framework */; };
+		E21C1A3E20540BC700AFBB54 /* hAndAStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E21C1A3D20540BC700AFBB54 /* hAndAStoryboard.storyboard */; };
+		E21C1A4020540C0200AFBB54 /* healthAndFitnessViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E21C1A3F20540C0200AFBB54 /* healthAndFitnessViewController.swift */; };
 		E22699C220533A0800ED360D /* LeftMenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E22699C120533A0800ED360D /* LeftMenuViewController.swift */; };
 		E22699C5205348A700ED360D /* NetworkController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E22699C4205348A700ED360D /* NetworkController.swift */; };
 		E22699C820537B6300ED360D /* Events.swift in Sources */ = {isa = PBXBuildFile; fileRef = E22699C720537B6300ED360D /* Events.swift */; };
@@ -31,6 +33,8 @@
 		7E13099F955A121C173925D7 /* Pods-Employee360.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Employee360.release.xcconfig"; path = "Pods/Target Support Files/Pods-Employee360/Pods-Employee360.release.xcconfig"; sourceTree = "<group>"; };
 		94A0215C0F8561772A40A52B /* Pods_Employee360.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Employee360.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E1F8C5B611E7DCB8336FE912 /* Pods-Employee360.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Employee360.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Employee360/Pods-Employee360.debug.xcconfig"; sourceTree = "<group>"; };
+		E21C1A3D20540BC700AFBB54 /* hAndAStoryboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = hAndAStoryboard.storyboard; sourceTree = "<group>"; };
+		E21C1A3F20540C0200AFBB54 /* healthAndFitnessViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = healthAndFitnessViewController.swift; sourceTree = "<group>"; };
 		E22699C120533A0800ED360D /* LeftMenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeftMenuViewController.swift; sourceTree = "<group>"; };
 		E22699C4205348A700ED360D /* NetworkController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkController.swift; sourceTree = "<group>"; };
 		E22699C720537B6300ED360D /* Events.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Events.swift; sourceTree = "<group>"; };
@@ -81,6 +85,15 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
+		E21C1A3C20540BA000AFBB54 /* Health and Fitness */ = {
+			isa = PBXGroup;
+			children = (
+				E21C1A3D20540BC700AFBB54 /* hAndAStoryboard.storyboard */,
+				E21C1A3F20540C0200AFBB54 /* healthAndFitnessViewController.swift */,
+			);
+			path = "Health and Fitness";
+			sourceTree = "<group>";
+		};
 		E22699C3205347DD00ED360D /* Services */ = {
 			isa = PBXGroup;
 			children = (
@@ -119,14 +132,15 @@
 		E29206B42052FD120051940E /* Employee360 */ = {
 			isa = PBXGroup;
 			children = (
-				E2F5DA752053C7B700BB15CF /* Common */,
-				E2F5DA702053B58B00BB15CF /* UserProfile */,
-				E22699C620537B4E00ED360D /* Model */,
-				E22699C3205347DD00ED360D /* Services */,
-				E29206D3205327910051940E /* SideMenu */,
-				E29206C72052FE900051940E /* LoginAndHome */,
 				E29206B52052FD130051940E /* AppDelegate.swift */,
 				E29206B92052FD130051940E /* Main.storyboard */,
+				E2F5DA752053C7B700BB15CF /* Common */,
+				E29206D3205327910051940E /* SideMenu */,
+				E22699C620537B4E00ED360D /* Model */,
+				E22699C3205347DD00ED360D /* Services */,
+				E29206C72052FE900051940E /* LoginAndHome */,
+				E2F5DA702053B58B00BB15CF /* UserProfile */,
+				E21C1A3C20540BA000AFBB54 /* Health and Fitness */,
 				E29206BC2052FD130051940E /* Assets.xcassets */,
 				E29206BE2052FD130051940E /* LaunchScreen.storyboard */,
 				E29206C12052FD130051940E /* Info.plist */,
@@ -236,6 +250,7 @@
 			files = (
 				E2F5DA6F2053A4C600BB15CF /* EventTableViewCell.xib in Resources */,
 				E29206C02052FD130051940E /* LaunchScreen.storyboard in Resources */,
+				E21C1A3E20540BC700AFBB54 /* hAndAStoryboard.storyboard in Resources */,
 				E29206BD2052FD130051940E /* Assets.xcassets in Resources */,
 				E29206BB2052FD130051940E /* Main.storyboard in Resources */,
 				E2F5DA722053B5A500BB15CF /* ProfileStoryboard.storyboard in Resources */,
@@ -308,6 +323,7 @@
 				E2F5DA772053C7D600BB15CF /* UIViewControllerExtension.swift in Sources */,
 				E2F5DA6E2053A4C600BB15CF /* EventTableViewCell.swift in Sources */,
 				E2F5DA742053B5F200BB15CF /* UserProfileViewController.swift in Sources */,
+				E21C1A4020540C0200AFBB54 /* healthAndFitnessViewController.swift in Sources */,
 				E29206D9205334C10051940E /* RightMenuViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

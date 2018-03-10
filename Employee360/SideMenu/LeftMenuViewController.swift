@@ -123,11 +123,11 @@ extension LeftMenuViewController: UITableViewDelegate, UITableViewDataSource {
             
         case 4:
             
-//            let storyboard = UIStoryboard(name: "Main", bundle: nil)
-//            let settingsViewController = storyboard.instantiateViewController(withIdentifier: "SettingsID") as! SettingsViewController
-//
-//            sideMenuViewController?.contentViewController = UINavigationController(rootViewController: settingsViewController)
-//            sideMenuViewController?.hideMenuViewController()
+            let storyboard = UIStoryboard(name: "hAndAStoryboard", bundle: nil)
+            let settingsViewController = storyboard.instantiateViewController(withIdentifier: "healthAndFitnessViewController") as! healthAndFitnessViewController
+
+            sideMenuViewController?.contentViewController = UINavigationController(rootViewController: settingsViewController)
+            sideMenuViewController?.hideMenuViewController()
             break
             
         default:
