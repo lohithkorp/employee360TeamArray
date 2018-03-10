@@ -16,6 +16,7 @@
 		E22699C820537B6300ED360D /* Events.swift in Sources */ = {isa = PBXBuildFile; fileRef = E22699C720537B6300ED360D /* Events.swift */; };
 		E22699CA20537E4D00ED360D /* Employee.swift in Sources */ = {isa = PBXBuildFile; fileRef = E22699C920537E4D00ED360D /* Employee.swift */; };
 		E23E7D2B205449C500F11F36 /* PayrollViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E23E7D2A205449C500F11F36 /* PayrollViewController.swift */; };
+		E23E7D2D205461B200F11F36 /* SelfTasksViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E23E7D2C205461B200F11F36 /* SelfTasksViewController.swift */; };
 		E29206B62052FD130051940E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E29206B52052FD130051940E /* AppDelegate.swift */; };
 		E29206B82052FD130051940E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E29206B72052FD130051940E /* ViewController.swift */; };
 		E29206BB2052FD130051940E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E29206B92052FD130051940E /* Main.storyboard */; };
@@ -43,6 +44,7 @@
 		E22699C720537B6300ED360D /* Events.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Events.swift; sourceTree = "<group>"; };
 		E22699C920537E4D00ED360D /* Employee.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Employee.swift; sourceTree = "<group>"; };
 		E23E7D2A205449C500F11F36 /* PayrollViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PayrollViewController.swift; sourceTree = "<group>"; };
+		E23E7D2C205461B200F11F36 /* SelfTasksViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelfTasksViewController.swift; sourceTree = "<group>"; };
 		E29206B22052FD120051940E /* Employee360.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Employee360.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E29206B52052FD130051940E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E29206B72052FD130051940E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -169,6 +171,7 @@
 				E29206C82053154D0051940E /* HomeViewController.swift */,
 				E2F5DA6C2053A4C600BB15CF /* EventTableViewCell.swift */,
 				E2F5DA6D2053A4C600BB15CF /* EventTableViewCell.xib */,
+				E23E7D2C205461B200F11F36 /* SelfTasksViewController.swift */,
 			);
 			path = LoginAndHome;
 			sourceTree = "<group>";
@@ -336,6 +339,7 @@
 				E23E7D2B205449C500F11F36 /* PayrollViewController.swift in Sources */,
 				E29206C92053154D0051940E /* HomeViewController.swift in Sources */,
 				E22699C5205348A700ED360D /* NetworkController.swift in Sources */,
+				E23E7D2D205461B200F11F36 /* SelfTasksViewController.swift in Sources */,
 				E2F5DA772053C7D600BB15CF /* UIViewControllerExtension.swift in Sources */,
 				E2F5DA6E2053A4C600BB15CF /* EventTableViewCell.swift in Sources */,
 				E2F5DA742053B5F200BB15CF /* UserProfileViewController.swift in Sources */,

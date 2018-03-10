@@ -105,11 +105,10 @@ extension LeftMenuViewController: UITableViewDelegate, UITableViewDataSource {
             break
             
         case 2:
-//            let storyboard = UIStoryboard(name: "Main", bundle: nil)
-//            let shopViewController = storyboard.instantiateViewController(withIdentifier: "ShopsAndServicesID") as! ShopsAndServicesViewController
-//
-//            sideMenuViewController?.contentViewController = UINavigationController(rootViewController:shopViewController)
-//            sideMenuViewController?.hideMenuViewController()
+            let storyboard = UIStoryboard(name: "Main", bundle: nil)
+            let selfTasksViewController = storyboard.instantiateViewController(withIdentifier: "SelfTasksViewController") as! SelfTasksViewController
+            sideMenuViewController?.contentViewController = UINavigationController(rootViewController:selfTasksViewController)
+            sideMenuViewController?.hideMenuViewController()
             break
             
         case 3:

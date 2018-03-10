@@ -125,6 +125,33 @@
             </objects>
             <point key="canvasLocation" x="-329" y="-495"/>
         </scene>
+        <!--SelfTasksViewController-->
+        <scene sceneID="6h0-RP-mcT">
+            <objects>
+                <viewController restorationIdentifier="SelfTasksViewController" storyboardIdentifier="SelfTasksViewController" title="SelfTasksViewController" id="H0s-gA-koD" customClass="SelfTasksViewController" customModule="Employee360" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="0cj-vy-v17">
+                        <rect key="frame" x="0.0" y="0.0" width="1112" height="834"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="FEATURE COMING SOON" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="L1n-wu-SrN">
+                                <rect key="frame" x="397.5" y="400.5" width="317.5" height="33.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="28"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.0" green="0.7725490196" blue="0.80392156859999997" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="L1n-wu-SrN" firstAttribute="centerY" secondItem="0cj-vy-v17" secondAttribute="centerY" id="DGp-EA-qls"/>
+                            <constraint firstItem="L1n-wu-SrN" firstAttribute="centerX" secondItem="0cj-vy-v17" secondAttribute="centerX" id="dav-Lk-dh2"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="x20-24-u8p"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="6HE-0H-U9B" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-336" y="-1775"/>
+        </scene>
         <!--Left Menu View Controller-->
         <scene sceneID="TNN-9z-wIs">
             <objects>
