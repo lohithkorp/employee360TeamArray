@@ -22,6 +22,8 @@
 		E29206D9205334C10051940E /* RightMenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E29206D8205334C10051940E /* RightMenuViewController.swift */; };
 		E2F5DA6E2053A4C600BB15CF /* EventTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2F5DA6C2053A4C600BB15CF /* EventTableViewCell.swift */; };
 		E2F5DA6F2053A4C600BB15CF /* EventTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E2F5DA6D2053A4C600BB15CF /* EventTableViewCell.xib */; };
+		E2F5DA722053B5A500BB15CF /* ProfileStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E2F5DA712053B5A500BB15CF /* ProfileStoryboard.storyboard */; };
+		E2F5DA742053B5F200BB15CF /* UserProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2F5DA732053B5F200BB15CF /* UserProfileViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -44,6 +46,8 @@
 		E29206D8205334C10051940E /* RightMenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RightMenuViewController.swift; sourceTree = "<group>"; };
 		E2F5DA6C2053A4C600BB15CF /* EventTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventTableViewCell.swift; sourceTree = "<group>"; };
 		E2F5DA6D2053A4C600BB15CF /* EventTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = EventTableViewCell.xib; sourceTree = "<group>"; };
+		E2F5DA712053B5A500BB15CF /* ProfileStoryboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ProfileStoryboard.storyboard; sourceTree = "<group>"; };
+		E2F5DA732053B5F200BB15CF /* UserProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserProfileViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -113,6 +117,7 @@
 		E29206B42052FD120051940E /* Employee360 */ = {
 			isa = PBXGroup;
 			children = (
+				E2F5DA702053B58B00BB15CF /* UserProfile */,
 				E22699C620537B4E00ED360D /* Model */,
 				E22699C3205347DD00ED360D /* Services */,
 				E29206D3205327910051940E /* SideMenu */,
@@ -145,6 +150,15 @@
 				E22699C120533A0800ED360D /* LeftMenuViewController.swift */,
 			);
 			path = SideMenu;
+			sourceTree = "<group>";
+		};
+		E2F5DA702053B58B00BB15CF /* UserProfile */ = {
+			isa = PBXGroup;
+			children = (
+				E2F5DA712053B5A500BB15CF /* ProfileStoryboard.storyboard */,
+				E2F5DA732053B5F200BB15CF /* UserProfileViewController.swift */,
+			);
+			path = UserProfile;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -213,6 +227,7 @@
 				E29206C02052FD130051940E /* LaunchScreen.storyboard in Resources */,
 				E29206BD2052FD130051940E /* Assets.xcassets in Resources */,
 				E29206BB2052FD130051940E /* Main.storyboard in Resources */,
+				E2F5DA722053B5A500BB15CF /* ProfileStoryboard.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -280,6 +295,7 @@
 				E29206C92053154D0051940E /* HomeViewController.swift in Sources */,
 				E22699C5205348A700ED360D /* NetworkController.swift in Sources */,
 				E2F5DA6E2053A4C600BB15CF /* EventTableViewCell.swift in Sources */,
+				E2F5DA742053B5F200BB15CF /* UserProfileViewController.swift in Sources */,
 				E29206D9205334C10051940E /* RightMenuViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -20,7 +20,7 @@ class LeftMenuViewController: UIViewController {
         tableView.autoresizingMask = [.flexibleTopMargin, .flexibleBottomMargin, .flexibleWidth]
         tableView.register(UITableViewCell.self, forCellReuseIdentifier: "cell")
         tableView.isOpaque = false
-        tableView.backgroundColor = UIColor.clear
+        tableView.backgroundColor = UIColor(red: 255.0/255.0, green: 255.0/255.0, blue: 141.0/255.0, alpha: 1.0)
         tableView.backgroundView = nil
         tableView.bounces = false
         return tableView
@@ -43,7 +43,7 @@ extension LeftMenuViewController: UITableViewDelegate, UITableViewDataSource {
     
     @objc func changeLanguage(){
         
-        titles = ["Home", "Personal Info", "Absence Management", "Payroll", "Trainings"]
+        titles = ["Home", "Personal Info", "Self Tasks", "Payroll", "Trainings"]
         tableView.reloadData()
     }
     
@@ -53,47 +53,33 @@ extension LeftMenuViewController: UITableViewDelegate, UITableViewDataSource {
     
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        return 54
+        return 90
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
         let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath)
         
-        let images: [String] = ["bulletPointOne", "bulletPointOne", "bulletPointOne", "bulletPointOne", "bulletPointOne"]
+        let images: [String] = ["icons8-house", "icons8-user", "icons8-task-planning", "icons8-money", "icons8-training"]
         
         cell.backgroundColor = UIColor.clear
-        cell.textLabel?.font = UIFont(name: "Lato-Regular", size: 18)
-        cell.textLabel?.textColor = UIColor.white
+        cell.textLabel?.font = UIFont(name: "Lato-Regular", size: 45)
+        cell.textLabel?.textColor = UIColor.black
         cell.textLabel?.text  = titles[(indexPath as IndexPath).row]
         cell.selectionStyle = .none
         cell.imageView?.image = UIImage(named: images[(indexPath as IndexPath).row])
-        
         
         return cell
     }
     
     func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
-        
+
         let view = UIView(frame: CGRect(x: 0, y: 0, width: tableView.frame.size.width, height: 18))
         let label1 = UILabel(frame: CGRect(x: 20, y: 60, width: 152, height: 61))
-        label1.font = UIFont(name: "Lato-Regular", size: 26)
+        label1.font = UIFont(name: "Lato-Regular", size: 40)
         label1.textColor = UIColor.white
-        
-        label1.text = "Welcome_title"
-        
-        let label2 = UILabel(frame: CGRect(x: 20, y: 92, width: 162, height: 61))
-        
-        label2.textColor = UIColor.white
-        label2.font = UIFont(name: "Lato-Bold", size:26)
+
         view.addSubview(label1)
-        view.addSubview(label2)
-        let px = 1 / UIScreen.main.scale
-        let frame = CGRect(x:20, y:168, width:250, height:px)
-        let line: UIView = UIView(frame: frame)
-        line.backgroundColor = UIColor(red: 255.0/255.0, green: 255.0/255.0, blue: 255.0/255.0, alpha: 0.5)
-        view.addSubview(line)
-        
         return view
     }
     
@@ -101,52 +87,52 @@ extension LeftMenuViewController: UITableViewDelegate, UITableViewDataSource {
         
         tableView.deselectRow(at: indexPath, animated: true)
         
-        /*switch (indexPath as IndexPath).row {
+        switch (indexPath as IndexPath).row {
         case 0:
             let storyboard = UIStoryboard(name: "Main", bundle: nil)
-            let homeViewController = storyboard.instantiateViewController(withIdentifier: "HomeViewControllerID") as! HomeViewController
-            let appDelegate = UIApplication.shared.delegate as! AppDelegate
-            homeViewController.xtraService = appDelegate.xtraService
+            let homeViewController = storyboard.instantiateViewController(withIdentifier: "HomeViewController") as! HomeViewController
+            
             sideMenuViewController?.contentViewController = UINavigationController(rootViewController:homeViewController)
             sideMenuViewController?.hideMenuViewController()
             break
+            
         case 1:
             
-            let storyboard = UIStoryboard(name: "Main", bundle: nil)
-            let manageProfileViewController = storyboard.instantiateViewController(withIdentifier: "ManageProfileViewControllerID")  as! ManageProfileViewController
-            sideMenuViewController?.contentViewController = UINavigationController(rootViewController:manageProfileViewController)
+            let storyboard = UIStoryboard(name: "ProfileStoryboard", bundle: nil)
+            let userProfileViewController = storyboard.instantiateViewController(withIdentifier: "UserProfileViewController")  as! UserProfileViewController
+            sideMenuViewController?.contentViewController = UINavigationController(rootViewController:userProfileViewController)
             sideMenuViewController?.hideMenuViewController()
             break
             
         case 2:
-            let storyboard = UIStoryboard(name: "Main", bundle: nil)
-            let shopViewController = storyboard.instantiateViewController(withIdentifier: "ShopsAndServicesID") as! ShopsAndServicesViewController
-            
-            sideMenuViewController?.contentViewController = UINavigationController(rootViewController:shopViewController)
-            sideMenuViewController?.hideMenuViewController()
+//            let storyboard = UIStoryboard(name: "Main", bundle: nil)
+//            let shopViewController = storyboard.instantiateViewController(withIdentifier: "ShopsAndServicesID") as! ShopsAndServicesViewController
+//
+//            sideMenuViewController?.contentViewController = UINavigationController(rootViewController:shopViewController)
+//            sideMenuViewController?.hideMenuViewController()
             break
             
         case 3:
             
-            let storyboard = UIStoryboard(name: "Main", bundle: nil)
-            let mapViewController = storyboard.instantiateViewController(withIdentifier: "MapViewControllerID")  as! MapViewController
-            
-            sideMenuViewController?.contentViewController = UINavigationController(rootViewController: mapViewController)
-            sideMenuViewController?.hideMenuViewController()
+//            let storyboard = UIStoryboard(name: "Main", bundle: nil)
+//            let mapViewController = storyboard.instantiateViewController(withIdentifier: "MapViewControllerID")  as! MapViewController
+//
+//            sideMenuViewController?.contentViewController = UINavigationController(rootViewController: mapViewController)
+//            sideMenuViewController?.hideMenuViewController()
             break
             
         case 4:
             
-            let storyboard = UIStoryboard(name: "Main", bundle: nil)
-            let settingsViewController = storyboard.instantiateViewController(withIdentifier: "SettingsID") as! SettingsViewController
-            
-            sideMenuViewController?.contentViewController = UINavigationController(rootViewController: settingsViewController)
-            sideMenuViewController?.hideMenuViewController()
+//            let storyboard = UIStoryboard(name: "Main", bundle: nil)
+//            let settingsViewController = storyboard.instantiateViewController(withIdentifier: "SettingsID") as! SettingsViewController
+//
+//            sideMenuViewController?.contentViewController = UINavigationController(rootViewController: settingsViewController)
+//            sideMenuViewController?.hideMenuViewController()
             break
             
         default:
             break
-        }*/
+        }
         
         
     }

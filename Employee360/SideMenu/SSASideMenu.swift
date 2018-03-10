@@ -231,7 +231,7 @@ class SSASideMenu: UIViewController, UIGestureRecognizerDelegate {
     @IBInspectable var animationDuration: Float = 0.35
     @IBInspectable var panGestureEnabled: Bool = true
     @IBInspectable var panDirection: SSASideMenuPanDirection = .edge
-    @IBInspectable var type: SSASideMenuType = .scale
+    @IBInspectable var type: SSASideMenuType = .slip
     @IBInspectable var panMinimumOpenThreshold: UInt = 60
     @IBInspectable var menuViewControllerTransformation: CGAffineTransform = CGAffineTransform(scaleX: 1.5, y: 1.5)
     @IBInspectable var backgroundTransformation: CGAffineTransform = CGAffineTransform(scaleX: 1.7, y: 1.7)

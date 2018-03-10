@@ -46,6 +46,8 @@ class HomeViewController: UIViewController, UITableViewDelegate, UITableViewData
         self.navigationItem.leftBarButtonItem = nil
         self.navigationItem.hidesBackButton = true
         
+        self.navigationItem.title = "Home"
+        
         self.navigationController?.navigationBar.barTintColor = UIColor.white
         
         let button =  UIButton(type: .custom)

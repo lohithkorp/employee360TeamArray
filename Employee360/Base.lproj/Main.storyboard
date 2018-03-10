@@ -18,16 +18,15 @@
                         <rect key="frame" x="0.0" y="0.0" width="1112" height="834"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Iq5-DX-h9e">
-                                <rect key="frame" x="436" y="28" width="240" height="128"/>
-                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Emp360Logo" translatesAutoresizingMaskIntoConstraints="NO" id="Iq5-DX-h9e">
+                                <rect key="frame" x="436" y="28" width="250" height="250"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="128" id="Bm8-yF-YbZ"/>
-                                    <constraint firstAttribute="width" constant="240" id="eHh-Gs-KfE"/>
+                                    <constraint firstAttribute="height" constant="250" id="Bm8-yF-YbZ"/>
+                                    <constraint firstAttribute="width" constant="250" id="eHh-Gs-KfE"/>
                                 </constraints>
                             </imageView>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="YnU-2K-c0Q">
-                                <rect key="frame" x="326" y="206" width="459" height="477"/>
+                                <rect key="frame" x="327" y="296" width="459" height="477"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Username" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ims-c1-UCi">
                                         <rect key="frame" x="50" y="52" width="359" height="29"/>
@@ -109,9 +108,9 @@
                         <color key="backgroundColor" red="0.0" green="0.77254901960784317" blue="0.80392156862745101" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
                             <constraint firstItem="YnU-2K-c0Q" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Jgm-ad-QMV"/>
-                            <constraint firstItem="YnU-2K-c0Q" firstAttribute="top" secondItem="Iq5-DX-h9e" secondAttribute="bottom" constant="50" id="Ks4-hS-JCi"/>
+                            <constraint firstItem="YnU-2K-c0Q" firstAttribute="top" secondItem="Iq5-DX-h9e" secondAttribute="bottom" constant="18" id="Ks4-hS-JCi"/>
                             <constraint firstItem="Iq5-DX-h9e" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="8" id="eDY-Qx-XcY"/>
-                            <constraint firstItem="Iq5-DX-h9e" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="siE-Bm-Oy1"/>
+                            <constraint firstItem="Iq5-DX-h9e" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" constant="5" id="siE-Bm-Oy1"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
@@ -334,4 +333,7 @@
             <point key="canvasLocation" x="362.58992805755395" y="-496.40287769784175"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="Emp360Logo" width="305" height="305"/>
+    </resources>
 </document>
