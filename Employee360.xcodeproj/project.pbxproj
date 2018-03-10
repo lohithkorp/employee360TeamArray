@@ -147,7 +147,6 @@
 		E29206B42052FD120051940E /* Employee360 */ = {
 			isa = PBXGroup;
 			children = (
-				E21C1A412054248B00AFBB54 /* Payroll */,
 				E29206B52052FD130051940E /* AppDelegate.swift */,
 				E29206B92052FD130051940E /* Main.storyboard */,
 				E2F5DA752053C7B700BB15CF /* Common */,
@@ -157,6 +156,7 @@
 				E29206C72052FE900051940E /* LoginAndHome */,
 				E2F5DA702053B58B00BB15CF /* UserProfile */,
 				E21C1A3C20540BA000AFBB54 /* Health and Fitness */,
+				E21C1A412054248B00AFBB54 /* Payroll */,
 				E29206BC2052FD130051940E /* Assets.xcassets */,
 				E29206BE2052FD130051940E /* LaunchScreen.storyboard */,
 				E29206C12052FD130051940E /* Info.plist */,

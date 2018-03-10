@@ -44,8 +44,9 @@ class PayrollViewController: UIViewController, UIDocumentInteractionControllerDe
                 
                 print(documentsDirectory)
                 
-                let filePath = "\(documentsDirectory)/form16.pdf)"
+                let filePath = "\(documentsDirectory)/form16.pdf"
                 print("filePath \(filePath)")
+
                 self.documentController = UIDocumentInteractionController(url: URL.init(fileURLWithPath: filePath))
                 self.documentController.delegate = self as UIDocumentInteractionControllerDelegate
                 self.documentController.presentPreview(animated: true)
