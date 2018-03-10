@@ -43,7 +43,7 @@ extension LeftMenuViewController: UITableViewDelegate, UITableViewDataSource {
     
     @objc func changeLanguage(){
         
-        titles = ["Home", "Personal Info", "Self Tasks", "Payroll", "Trainings"]
+        titles = ["Home", "Personal Info", "Self Tasks", "Payroll", "Health & Fitness"]
         tableView.reloadData()
     }
     
@@ -60,7 +60,7 @@ extension LeftMenuViewController: UITableViewDelegate, UITableViewDataSource {
         
         let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath)
         
-        let images: [String] = ["icons8-house", "icons8-user", "icons8-task-planning", "icons8-money", "icons8-training"]
+        let images: [String] = ["icons8-house", "icons8-user", "icons8-task-planning", "icons8-money", "icons8-exercise"]
         
         cell.backgroundColor = UIColor.clear
         cell.textLabel?.font = UIFont(name: "Lato-Regular", size: 45)

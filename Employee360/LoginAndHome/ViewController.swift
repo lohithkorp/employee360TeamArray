@@ -17,6 +17,13 @@ class ViewController: UIViewController {
     
     @IBOutlet weak var passwordTextField: UITextField!
     
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        loginUIView.layer.cornerRadius = 10.0
+        loginButton.layer.cornerRadius = 10.0
+        
+    }
+    
     @IBAction func loginButtonAction(_ sender: Any) {
         
         if (userNameTextField.text?.isEmpty)! || (passwordTextField.text?.isEmpty)! {
@@ -50,13 +57,6 @@ class ViewController: UIViewController {
                 self.present(alert, animated: true, completion: nil)
             }
         }
-    }
-    
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        loginUIView.layer.cornerRadius = 10.0
-        loginButton.layer.cornerRadius = 10.0
-        
     }
 }
 
