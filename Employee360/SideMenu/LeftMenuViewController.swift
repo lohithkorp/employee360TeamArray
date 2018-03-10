@@ -27,17 +27,13 @@ class LeftMenuViewController: UIViewController {
         
     }()
     
-    
     override func viewDidLoad() {
         super.viewDidLoad()
-        let appDelegate = UIApplication.shared.delegate as! AppDelegate
-        
         view.backgroundColor = UIColor.clear
         self.tableView.sectionHeaderHeight = 183
         view.addSubview(tableView)
         changeLanguage()
     }
-    
 }
 
 

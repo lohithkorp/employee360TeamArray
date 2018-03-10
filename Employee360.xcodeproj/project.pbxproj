@@ -20,6 +20,8 @@
 		E29206C92053154D0051940E /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E29206C82053154D0051940E /* HomeViewController.swift */; };
 		E29206D7205334610051940E /* SSASideMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = E29206D6205334610051940E /* SSASideMenu.swift */; };
 		E29206D9205334C10051940E /* RightMenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E29206D8205334C10051940E /* RightMenuViewController.swift */; };
+		E2F5DA6E2053A4C600BB15CF /* EventTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2F5DA6C2053A4C600BB15CF /* EventTableViewCell.swift */; };
+		E2F5DA6F2053A4C600BB15CF /* EventTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E2F5DA6D2053A4C600BB15CF /* EventTableViewCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -40,6 +42,8 @@
 		E29206C82053154D0051940E /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		E29206D6205334610051940E /* SSASideMenu.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SSASideMenu.swift; sourceTree = "<group>"; };
 		E29206D8205334C10051940E /* RightMenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RightMenuViewController.swift; sourceTree = "<group>"; };
+		E2F5DA6C2053A4C600BB15CF /* EventTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventTableViewCell.swift; sourceTree = "<group>"; };
+		E2F5DA6D2053A4C600BB15CF /* EventTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = EventTableViewCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -127,6 +131,8 @@
 			children = (
 				E29206B72052FD130051940E /* ViewController.swift */,
 				E29206C82053154D0051940E /* HomeViewController.swift */,
+				E2F5DA6C2053A4C600BB15CF /* EventTableViewCell.swift */,
+				E2F5DA6D2053A4C600BB15CF /* EventTableViewCell.xib */,
 			);
 			path = LoginAndHome;
 			sourceTree = "<group>";
@@ -203,6 +209,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E2F5DA6F2053A4C600BB15CF /* EventTableViewCell.xib in Resources */,
 				E29206C02052FD130051940E /* LaunchScreen.storyboard in Resources */,
 				E29206BD2052FD130051940E /* Assets.xcassets in Resources */,
 				E29206BB2052FD130051940E /* Main.storyboard in Resources */,
@@ -272,6 +279,7 @@
 				E22699C820537B6300ED360D /* Events.swift in Sources */,
 				E29206C92053154D0051940E /* HomeViewController.swift in Sources */,
 				E22699C5205348A700ED360D /* NetworkController.swift in Sources */,
+				E2F5DA6E2053A4C600BB15CF /* EventTableViewCell.swift in Sources */,
 				E29206D9205334C10051940E /* RightMenuViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

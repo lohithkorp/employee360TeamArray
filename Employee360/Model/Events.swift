@@ -14,6 +14,16 @@ public enum Result<Value> {
     case failure(Error)
 }
 
+enum ServiceError {
+    
+    case configurationError(message: String)
+    
+    case general
+    
+    case errorMessage(message: String)
+    
+}
+
 class Events: Mappable {
     var eventsList: [EventsList]?
     func mapping(map: Map) {

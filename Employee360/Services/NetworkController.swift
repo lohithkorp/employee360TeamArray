@@ -15,7 +15,6 @@ class NetworkController {
         
         Alamofire.request(url).validate().responseObject{ (responseData: DataResponse<Events>) in
             switch responseData.result {
-                
             case .success(let events):
                 
                 if let eventsList = events.eventsList {
@@ -25,24 +24,6 @@ class NetworkController {
             case .failure(let error):
                 callback(.failure(error))
             }
-        /*Alamofire.request(url).responseJSON { response in
-            switch response.result {
-            case .success:
-                print(response)
-                if let data = response.data {
-                    let json = JSON(data: data) as Events
-                    callback(json)
-                }
-                
-                else {
-                    callback("Empty Data" as AnyObject)
-                }
-                
-            case .failure(let error):
-                print("Error \(error)")
-                completionHandler(error as AnyObject)
-            }
-        }*/
         }
     }
     
