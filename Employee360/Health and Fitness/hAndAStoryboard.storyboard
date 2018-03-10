@@ -81,7 +81,7 @@
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Value" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qB0-pk-HSN">
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="BMI Value" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qB0-pk-HSN">
                                         <rect key="frame" x="162" y="55" width="139" height="26.5"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="139" id="yLB-nd-yng"/>
@@ -90,7 +90,7 @@
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gwD-Zv-5hX">
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Significance" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gwD-Zv-5hX">
                                         <rect key="frame" x="94" y="89.5" width="280" height="40"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="40" id="XDd-QE-9Lz"/>
@@ -129,21 +129,39 @@
                                     <action selector="calculateButtonAction:" destination="Jgc-ty-klV" eventType="touchUpInside" id="PcF-vy-Kk1"/>
                                 </connections>
                             </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="line_graphs" translatesAutoresizingMaskIntoConstraints="NO" id="muc-U6-wNP">
+                                <rect key="frame" x="80" y="461" width="399" height="293"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="293" id="8ft-OA-GUk"/>
+                                    <constraint firstAttribute="width" constant="399" id="urL-7o-2F9"/>
+                                </constraints>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bmi-chart" translatesAutoresizingMaskIntoConstraints="NO" id="eTC-0y-ZiY">
+                                <rect key="frame" x="619" y="461" width="412" height="293"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="412" id="Usj-Vb-WxW"/>
+                                    <constraint firstAttribute="height" constant="293" id="gxZ-Tb-zqF"/>
+                                </constraints>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" red="0.0" green="0.7725490196" blue="0.80392156859999997" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
                             <constraint firstItem="yL5-kW-vEt" firstAttribute="leading" secondItem="eIu-g6-vmj" secondAttribute="leading" constant="48" id="0s4-3f-8EA"/>
+                            <constraint firstItem="eIu-g6-vmj" firstAttribute="bottom" secondItem="eTC-0y-ZiY" secondAttribute="bottom" constant="80" id="7FY-z9-uiC"/>
                             <constraint firstItem="StU-h1-XNp" firstAttribute="top" secondItem="eIu-g6-vmj" secondAttribute="top" constant="48" id="FTG-tM-LXd"/>
                             <constraint firstItem="ttC-lk-okP" firstAttribute="top" secondItem="e1Y-Py-vNj" secondAttribute="bottom" constant="38" id="G70-Wl-ObC"/>
+                            <constraint firstItem="muc-U6-wNP" firstAttribute="leading" secondItem="eIu-g6-vmj" secondAttribute="leading" constant="80" id="HTs-fg-6VM"/>
                             <constraint firstItem="e1Y-Py-vNj" firstAttribute="leading" secondItem="yL5-kW-vEt" secondAttribute="trailing" constant="30" id="Jgd-oj-nBF"/>
                             <constraint firstItem="ET4-rz-ACC" firstAttribute="centerY" secondItem="WDQ-Gv-TYE" secondAttribute="centerY" id="KQq-5O-Cpi"/>
                             <constraint firstItem="ET4-rz-ACC" firstAttribute="leading" secondItem="WDQ-Gv-TYE" secondAttribute="trailing" constant="30" id="Nai-MG-I1p"/>
+                            <constraint firstItem="eIu-g6-vmj" firstAttribute="bottom" secondItem="muc-U6-wNP" secondAttribute="bottom" constant="80" id="V1n-ok-p44"/>
                             <constraint firstItem="ttC-lk-okP" firstAttribute="leading" secondItem="e1Y-Py-vNj" secondAttribute="leading" id="WcH-mh-4vt"/>
                             <constraint firstItem="UO5-PG-sOQ" firstAttribute="top" secondItem="eIu-g6-vmj" secondAttribute="top" constant="98" id="Ycc-03-2Lo"/>
                             <constraint firstItem="yL5-kW-vEt" firstAttribute="top" secondItem="WDQ-Gv-TYE" secondAttribute="bottom" constant="54" id="eXQ-LP-NpJ"/>
                             <constraint firstItem="eIu-g6-vmj" firstAttribute="trailing" secondItem="UO5-PG-sOQ" secondAttribute="trailing" constant="71" id="fg0-8v-3Xl"/>
                             <constraint firstItem="WDQ-Gv-TYE" firstAttribute="top" secondItem="StU-h1-XNp" secondAttribute="bottom" constant="30" id="gy3-Jf-FOY"/>
                             <constraint firstItem="StU-h1-XNp" firstAttribute="leading" secondItem="eIu-g6-vmj" secondAttribute="leading" constant="48" id="llK-CT-aj2"/>
+                            <constraint firstItem="eIu-g6-vmj" firstAttribute="trailing" secondItem="eTC-0y-ZiY" secondAttribute="trailing" constant="81" id="nMk-Uf-3eg"/>
                             <constraint firstItem="e1Y-Py-vNj" firstAttribute="top" secondItem="ET4-rz-ACC" secondAttribute="bottom" constant="36" id="oRo-pY-iJW"/>
                             <constraint firstItem="WDQ-Gv-TYE" firstAttribute="leading" secondItem="eIu-g6-vmj" secondAttribute="leading" constant="48" id="u8v-nB-1NE"/>
                             <constraint firstItem="ttC-lk-okP" firstAttribute="trailing" secondItem="e1Y-Py-vNj" secondAttribute="trailing" id="vjg-x6-ifJ"/>
@@ -163,4 +181,8 @@
             <point key="canvasLocation" x="-338.30935251798564" y="141.72661870503597"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="bmi-chart" width="264" height="220"/>
+        <image name="line_graphs" width="250" height="164"/>
+    </resources>
 </document>
