@@ -24,7 +24,7 @@
                                     <constraint firstAttribute="width" constant="216" id="gRo-qE-sg5"/>
                                     <constraint firstAttribute="height" constant="30" id="kY7-M6-94e"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="17"/>
+                                <fontDescription key="fontDescription" type="italicSystem" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
@@ -34,7 +34,7 @@
                                     <constraint firstAttribute="width" constant="216" id="Xch-E5-EYc"/>
                                     <constraint firstAttribute="height" constant="30" id="XdN-IG-lwF"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <fontDescription key="fontDescription" type="italicSystem" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
@@ -44,7 +44,7 @@
                                     <constraint firstAttribute="width" constant="216" id="6w3-6I-NPK"/>
                                     <constraint firstAttribute="height" constant="102" id="BbI-uu-en2"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <fontDescription key="fontDescription" type="italicSystem" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
@@ -73,6 +73,9 @@
                         <viewLayoutGuide key="safeArea" id="p6c-95-Ubt"/>
                     </view>
                     <connections>
+                        <outlet property="addressLabel" destination="7Yo-hi-1Ic" id="5Dy-aB-qIU"/>
+                        <outlet property="contactNumberLabel" destination="iOI-pM-OD4" id="Wp2-aB-bxx"/>
+                        <outlet property="nameLabel" destination="7Xu-SL-B5v" id="1fw-ig-afW"/>
                         <outlet property="userImageButton" destination="cCI-Dp-oq5" id="tQH-FY-5tC"/>
                     </connections>
                 </viewController>

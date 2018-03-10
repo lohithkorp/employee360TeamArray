@@ -40,7 +40,7 @@
                                         </constraints>
                                         <nil key="textColor"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="18"/>
-                                        <textInputTraits key="textInputTraits"/>
+                                        <textInputTraits key="textInputTraits" autocapitalizationType="allCharacters"/>
                                     </textField>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Password" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="p5h-CV-qgt">
                                         <rect key="frame" x="50" y="183" width="359" height="29"/>
@@ -117,6 +117,8 @@
                     <connections>
                         <outlet property="loginButton" destination="f9G-5j-HgY" id="CXf-2s-asp"/>
                         <outlet property="loginUIView" destination="YnU-2K-c0Q" id="ZwZ-pR-tLg"/>
+                        <outlet property="passwordTextField" destination="CK0-h6-InU" id="kSF-wd-XNI"/>
+                        <outlet property="userNameTextField" destination="wmD-kz-pcQ" id="cfa-k9-1tc"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>

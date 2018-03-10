@@ -24,6 +24,7 @@
 		E2F5DA6F2053A4C600BB15CF /* EventTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E2F5DA6D2053A4C600BB15CF /* EventTableViewCell.xib */; };
 		E2F5DA722053B5A500BB15CF /* ProfileStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E2F5DA712053B5A500BB15CF /* ProfileStoryboard.storyboard */; };
 		E2F5DA742053B5F200BB15CF /* UserProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2F5DA732053B5F200BB15CF /* UserProfileViewController.swift */; };
+		E2F5DA772053C7D600BB15CF /* UIViewControllerExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2F5DA762053C7D600BB15CF /* UIViewControllerExtension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -48,6 +49,7 @@
 		E2F5DA6D2053A4C600BB15CF /* EventTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = EventTableViewCell.xib; sourceTree = "<group>"; };
 		E2F5DA712053B5A500BB15CF /* ProfileStoryboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ProfileStoryboard.storyboard; sourceTree = "<group>"; };
 		E2F5DA732053B5F200BB15CF /* UserProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserProfileViewController.swift; sourceTree = "<group>"; };
+		E2F5DA762053C7D600BB15CF /* UIViewControllerExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewControllerExtension.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -117,6 +119,7 @@
 		E29206B42052FD120051940E /* Employee360 */ = {
 			isa = PBXGroup;
 			children = (
+				E2F5DA752053C7B700BB15CF /* Common */,
 				E2F5DA702053B58B00BB15CF /* UserProfile */,
 				E22699C620537B4E00ED360D /* Model */,
 				E22699C3205347DD00ED360D /* Services */,
@@ -159,6 +162,14 @@
 				E2F5DA732053B5F200BB15CF /* UserProfileViewController.swift */,
 			);
 			path = UserProfile;
+			sourceTree = "<group>";
+		};
+		E2F5DA752053C7B700BB15CF /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				E2F5DA762053C7D600BB15CF /* UIViewControllerExtension.swift */,
+			);
+			path = Common;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -294,6 +305,7 @@
 				E22699C820537B6300ED360D /* Events.swift in Sources */,
 				E29206C92053154D0051940E /* HomeViewController.swift in Sources */,
 				E22699C5205348A700ED360D /* NetworkController.swift in Sources */,
+				E2F5DA772053C7D600BB15CF /* UIViewControllerExtension.swift in Sources */,
 				E2F5DA6E2053A4C600BB15CF /* EventTableViewCell.swift in Sources */,
 				E2F5DA742053B5F200BB15CF /* UserProfileViewController.swift in Sources */,
 				E29206D9205334C10051940E /* RightMenuViewController.swift in Sources */,

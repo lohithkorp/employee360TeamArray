@@ -8,6 +8,8 @@
 
 import UIKit
 
+var isUserLoggedIn: Bool!
+
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
 

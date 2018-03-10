@@ -27,17 +27,18 @@ class NetworkController {
         }
     }
     
-    func getEmployeeDetailsRequest(url: String, callback: @escaping (Result<Employee>) -> ()) {
+    func getEmployeeDetailsRequest(url: String, callback: @escaping (Result<[EmployeeDetails]>) -> ()) {
         Alamofire.request(url).validate().responseObject{ (responseData: DataResponse<Employee>) in
-        switch responseData.result {
-        case .success(let employeeDetails):
-            
-            callback(.success(employeeDetails))
-            
-        case .failure(let error):
-            callback(.failure(error))
+            switch responseData.result {
+            case .success(let employee):
+                if let employeeDetails = employee.employeeList {
+                    callback(.success(employeeDetails))
+                }
+                
+            case .failure(let error):
+                callback(.failure(error))
+            }
         }
-    }
     }
     
 }

@@ -52,23 +52,5 @@ class EventsList: Mappable {
     
 }
 
-class Employee: Mappable {
-    var employeeId: String?
-    var employeeName: String?
-    var qualification : String?
-    var totalexperience: String?
-    var organaigationexp: String?
-    
-    func mapping(map: Map) {
-        employeeId <- map["employeeId"]
-        employeeName <- map["employeeName"]
-        qualification <- map["qualification"]
-        totalexperience <- map["totalexperience"]
-        organaigationexp <- map["organaigationexp"]
-    }
-    
-    required init?(map: Map){
-        mapping(map: map)
-    }
-}
+
 
