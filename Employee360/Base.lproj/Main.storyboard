@@ -242,7 +242,7 @@
                                     <constraint firstAttribute="width" constant="320" id="Tuq-Uq-L4F"/>
                                 </constraints>
                             </tableView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VHZ-uq-t3n">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="VHZ-uq-t3n">
                                 <rect key="frame" x="24" y="122.5" width="150" height="150"/>
                                 <color key="backgroundColor" red="1" green="1" blue="0.55217978400000001" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
@@ -250,11 +250,14 @@
                                     <constraint firstAttribute="height" constant="150" id="tgY-Dx-DrG"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="18"/>
-                                <state key="normal" title="Apply Leave">
+                                <state key="normal" title="Change Profile Photo">
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="openUserProfileAction:" destination="EMs-7b-VD8" eventType="touchUpInside" id="Sv2-v8-z2H"/>
+                                </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fIn-D4-7cP">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="fIn-D4-7cP">
                                 <rect key="frame" x="294" y="122.5" width="150" height="150"/>
                                 <color key="backgroundColor" red="1" green="1" blue="0.55217978400000001" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
@@ -262,9 +265,12 @@
                                     <constraint firstAttribute="width" constant="150" id="PH3-sS-IdT"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="18"/>
-                                <state key="normal" title="Download PaySlip">
+                                <state key="normal" title="Download Form 16">
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="openPayrollAction:" destination="EMs-7b-VD8" eventType="touchUpInside" id="rDg-Ix-e3j"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cJA-p4-rYP">
                                 <rect key="frame" x="564" y="122.5" width="150" height="150"/>
@@ -274,9 +280,12 @@
                                     <constraint firstAttribute="width" constant="150" id="x9R-BF-49G"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="18"/>
-                                <state key="normal" title="Request Software">
+                                <state key="normal" title="BMI Today">
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="openHealthAndFitnessAction:" destination="EMs-7b-VD8" eventType="touchUpInside" id="ADt-a0-Umd"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JZz-be-SVJ">
                                 <rect key="frame" x="24" y="322.5" width="150" height="150"/>
@@ -289,6 +298,9 @@
                                 <state key="normal" title="Book-A-Cab">
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="openSelfTasksAction:" destination="EMs-7b-VD8" eventType="touchUpInside" id="Uqw-0D-wWE"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pz1-IJ-TGK">
                                 <rect key="frame" x="294" y="322.5" width="150" height="150"/>
@@ -297,14 +309,9 @@
                                 <state key="normal" title="HRA Policy">
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0t2-eY-XvH">
-                                <rect key="frame" x="564" y="322.5" width="150" height="150"/>
-                                <color key="backgroundColor" red="1" green="1" blue="0.55217978400000001" alpha="1" colorSpace="calibratedRGB"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
-                                <state key="normal">
-                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
+                                <connections>
+                                    <action selector="openSelfTasksAction:" destination="EMs-7b-VD8" eventType="touchUpInside" id="nrb-c5-HmK"/>
+                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Quick Access Links" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Aps-FZ-3V4">
                                 <rect key="frame" x="233" y="63" width="273" height="31"/>
@@ -321,15 +328,12 @@
                         <constraints>
                             <constraint firstItem="cJA-p4-rYP" firstAttribute="top" secondItem="fIn-D4-7cP" secondAttribute="top" id="2S9-r2-wV1"/>
                             <constraint firstItem="pXK-u9-bj7" firstAttribute="leading" secondItem="sC2-J9-DZa" secondAttribute="trailing" constant="5" id="3jb-il-flR"/>
-                            <constraint firstItem="0t2-eY-XvH" firstAttribute="trailing" secondItem="cJA-p4-rYP" secondAttribute="trailing" id="3wY-rg-ND3"/>
                             <constraint firstItem="G0Q-L5-CLl" firstAttribute="top" secondItem="cnI-5P-zEJ" secondAttribute="top" id="4xh-j3-2W3"/>
                             <constraint firstItem="JZz-be-SVJ" firstAttribute="top" secondItem="VHZ-uq-t3n" secondAttribute="bottom" constant="50" id="6sx-Qb-BMb"/>
                             <constraint firstItem="VHZ-uq-t3n" firstAttribute="leading" secondItem="cnI-5P-zEJ" secondAttribute="leading" constant="24" id="9fa-Ra-isY"/>
                             <constraint firstItem="pz1-IJ-TGK" firstAttribute="trailing" secondItem="fIn-D4-7cP" secondAttribute="trailing" id="BBl-36-Ic3"/>
                             <constraint firstItem="pz1-IJ-TGK" firstAttribute="bottom" secondItem="JZz-be-SVJ" secondAttribute="bottom" id="FIv-el-qwl"/>
-                            <constraint firstItem="0t2-eY-XvH" firstAttribute="bottom" secondItem="pz1-IJ-TGK" secondAttribute="bottom" id="Iu3-gp-UOe"/>
                             <constraint firstItem="VHZ-uq-t3n" firstAttribute="top" secondItem="sC2-J9-DZa" secondAttribute="bottom" constant="69.5" id="KQq-nl-Quu"/>
-                            <constraint firstItem="0t2-eY-XvH" firstAttribute="top" secondItem="pz1-IJ-TGK" secondAttribute="top" id="Mve-qu-FuS"/>
                             <constraint firstItem="cnI-5P-zEJ" firstAttribute="bottom" secondItem="G0Q-L5-CLl" secondAttribute="bottom" id="NAk-ws-Zsz"/>
                             <constraint firstItem="pXK-u9-bj7" firstAttribute="top" secondItem="cnI-5P-zEJ" secondAttribute="top" constant="3" id="NHh-2h-vT6"/>
                             <constraint firstItem="JZz-be-SVJ" firstAttribute="leading" secondItem="cnI-5P-zEJ" secondAttribute="leading" constant="24" id="OUz-bg-agw"/>
@@ -342,7 +346,6 @@
                             <constraint firstItem="sC2-J9-DZa" firstAttribute="top" secondItem="cnI-5P-zEJ" secondAttribute="top" constant="3" id="qSq-Ju-pLm"/>
                             <constraint firstItem="cnI-5P-zEJ" firstAttribute="trailing" secondItem="G0Q-L5-CLl" secondAttribute="trailing" id="uDP-Uj-QJj"/>
                             <constraint firstItem="Aps-FZ-3V4" firstAttribute="leading" secondItem="pXK-u9-bj7" secondAttribute="trailing" constant="32" id="uYt-19-o2w"/>
-                            <constraint firstItem="0t2-eY-XvH" firstAttribute="leading" secondItem="cJA-p4-rYP" secondAttribute="leading" id="wAi-vk-she"/>
                             <constraint firstItem="fIn-D4-7cP" firstAttribute="leading" secondItem="VHZ-uq-t3n" secondAttribute="trailing" constant="120" id="wPq-hO-CKU"/>
                             <constraint firstItem="G0Q-L5-CLl" firstAttribute="leading" secondItem="cJA-p4-rYP" secondAttribute="trailing" constant="78" id="yhH-JV-kY0"/>
                         </constraints>

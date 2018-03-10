@@ -7,10 +7,11 @@
 //
 
 import UIKit
+import MobileCoreServices
 
 var userId: String?
 
-class UserProfileViewController: UIViewController, UITextFieldDelegate, UIPickerViewDelegate, UIPickerViewDataSource {
+class UserProfileViewController: UIViewController, UITextFieldDelegate, UIPickerViewDelegate, UIPickerViewDataSource, UIImagePickerControllerDelegate, UINavigationControllerDelegate {
     
     var employeeDetails: [EmployeeDetails]?
 
@@ -44,7 +45,11 @@ class UserProfileViewController: UIViewController, UITextFieldDelegate, UIPicker
     var SubjectNames: [String] = ["PT Feedback", "Food Feedback", "Facilities Feedback", "Others"]
     
     @IBAction func submitButtonAction(_ sender: Any) {
+        
+        
     }
+    
+    @IBOutlet var img:UIImageView!=nil
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -69,10 +74,23 @@ class UserProfileViewController: UIViewController, UITextFieldDelegate, UIPicker
     
     
     @IBAction func userImageButtonAction(_ sender: Any) {
-        
-        
+        if UIImagePickerController.isSourceTypeAvailable(UIImagePickerControllerSourceType.photoLibrary){
+            let imag = UIImagePickerController()
+            imag.delegate = self
+            imag.sourceType = UIImagePickerControllerSourceType.photoLibrary
+            //imag.mediaTypes = [kUTTypeImage];
+            imag.allowsEditing = false
+            self.present(imag, animated: true, completion: nil)
+        }
     }
 
+    func imagePickerController(picker: UIImagePickerController!, didFinishPickingImage image: UIImage!, editingInfo: NSDictionary!) {
+        let selectedImage : UIImage = image
+        //var tempImage:UIImage = editingInfo[UIImagePickerControllerOriginalImage] as UIImage
+        img.image=selectedImage
+        self.dismiss(animated: true, completion: nil)
+    }
+    
     @IBAction func professionalInfoButtonAction(_ sender: Any) {
         contentView.backgroundColor = UIColor(red: 255.0/255.0, green: 255.0/255.0, blue: 141.0/255.0, alpha: 1.0)
         

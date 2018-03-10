@@ -91,4 +91,36 @@ class HomeViewController: UIViewController, UITableViewDelegate, UITableViewData
         }
         return cell
     }
+    
+    @IBAction func openUserProfileAction(_ sender: Any) {
+        
+        let storyboard = UIStoryboard(name: "ProfileStoryboard", bundle: nil)
+        let userProfileViewController = storyboard.instantiateViewController(withIdentifier: "UserProfileViewController")  as! UserProfileViewController
+        sideMenuViewController?.contentViewController = UINavigationController(rootViewController:userProfileViewController)
+        sideMenuViewController?.hideMenuViewController()
+    }
+    
+    
+    @IBAction func openPayrollAction(_ sender: Any) {
+        let storyboard = UIStoryboard(name: "PayrollStoryboard", bundle: nil)
+        let payrollViewController = storyboard.instantiateViewController(withIdentifier: "PayrollViewController")  as! PayrollViewController
+        
+        sideMenuViewController?.contentViewController = UINavigationController(rootViewController: payrollViewController)
+        sideMenuViewController?.hideMenuViewController()
+    }
+    
+    @IBAction func openHealthAndFitnessAction(_ sender: Any) {
+        let storyboard = UIStoryboard(name: "hAndAStoryboard", bundle: nil)
+        let settingsViewController = storyboard.instantiateViewController(withIdentifier: "healthAndFitnessViewController") as! healthAndFitnessViewController
+        
+        sideMenuViewController?.contentViewController = UINavigationController(rootViewController: settingsViewController)
+        sideMenuViewController?.hideMenuViewController()
+    }
+    
+    @IBAction func openSelfTasksAction(_ sender: Any) {
+        let storyboard = UIStoryboard(name: "Main", bundle: nil)
+        let selfTasksViewController = storyboard.instantiateViewController(withIdentifier: "SelfTasksViewController") as! SelfTasksViewController
+        sideMenuViewController?.contentViewController = UINavigationController(rootViewController:selfTasksViewController)
+        sideMenuViewController?.hideMenuViewController()
+    }
 }
