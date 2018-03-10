@@ -9,6 +9,9 @@
 /* Begin PBXBuildFile section */
 		D49C87455FF27051A6C42432 /* Pods_Employee360.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 94A0215C0F8561772A40A52B /* Pods_Employee360.framework */; };
 		E22699C220533A0800ED360D /* LeftMenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E22699C120533A0800ED360D /* LeftMenuViewController.swift */; };
+		E22699C5205348A700ED360D /* NetworkController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E22699C4205348A700ED360D /* NetworkController.swift */; };
+		E22699C820537B6300ED360D /* Events.swift in Sources */ = {isa = PBXBuildFile; fileRef = E22699C720537B6300ED360D /* Events.swift */; };
+		E22699CA20537E4D00ED360D /* Employee.swift in Sources */ = {isa = PBXBuildFile; fileRef = E22699C920537E4D00ED360D /* Employee.swift */; };
 		E29206B62052FD130051940E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E29206B52052FD130051940E /* AppDelegate.swift */; };
 		E29206B82052FD130051940E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E29206B72052FD130051940E /* ViewController.swift */; };
 		E29206BB2052FD130051940E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E29206B92052FD130051940E /* Main.storyboard */; };
@@ -24,6 +27,9 @@
 		94A0215C0F8561772A40A52B /* Pods_Employee360.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Employee360.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E1F8C5B611E7DCB8336FE912 /* Pods-Employee360.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Employee360.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Employee360/Pods-Employee360.debug.xcconfig"; sourceTree = "<group>"; };
 		E22699C120533A0800ED360D /* LeftMenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeftMenuViewController.swift; sourceTree = "<group>"; };
+		E22699C4205348A700ED360D /* NetworkController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkController.swift; sourceTree = "<group>"; };
+		E22699C720537B6300ED360D /* Events.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Events.swift; sourceTree = "<group>"; };
+		E22699C920537E4D00ED360D /* Employee.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Employee.swift; sourceTree = "<group>"; };
 		E29206B22052FD120051940E /* Employee360.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Employee360.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E29206B52052FD130051940E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E29206B72052FD130051940E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -65,6 +71,23 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
+		E22699C3205347DD00ED360D /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				E22699C4205348A700ED360D /* NetworkController.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		E22699C620537B4E00ED360D /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				E22699C720537B6300ED360D /* Events.swift */,
+				E22699C920537E4D00ED360D /* Employee.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 		E29206A92052FD120051940E = {
 			isa = PBXGroup;
 			children = (
@@ -86,12 +109,12 @@
 		E29206B42052FD120051940E /* Employee360 */ = {
 			isa = PBXGroup;
 			children = (
+				E22699C620537B4E00ED360D /* Model */,
+				E22699C3205347DD00ED360D /* Services */,
 				E29206D3205327910051940E /* SideMenu */,
 				E29206C72052FE900051940E /* LoginAndHome */,
 				E29206B52052FD130051940E /* AppDelegate.swift */,
-				E29206B72052FD130051940E /* ViewController.swift */,
 				E29206B92052FD130051940E /* Main.storyboard */,
-				E29206C82053154D0051940E /* HomeViewController.swift */,
 				E29206BC2052FD130051940E /* Assets.xcassets */,
 				E29206BE2052FD130051940E /* LaunchScreen.storyboard */,
 				E29206C12052FD130051940E /* Info.plist */,
@@ -102,6 +125,8 @@
 		E29206C72052FE900051940E /* LoginAndHome */ = {
 			isa = PBXGroup;
 			children = (
+				E29206B72052FD130051940E /* ViewController.swift */,
+				E29206C82053154D0051940E /* HomeViewController.swift */,
 			);
 			path = LoginAndHome;
 			sourceTree = "<group>";
@@ -240,10 +265,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				E29206B82052FD130051940E /* ViewController.swift in Sources */,
+				E22699CA20537E4D00ED360D /* Employee.swift in Sources */,
 				E29206D7205334610051940E /* SSASideMenu.swift in Sources */,
 				E22699C220533A0800ED360D /* LeftMenuViewController.swift in Sources */,
 				E29206B62052FD130051940E /* AppDelegate.swift in Sources */,
+				E22699C820537B6300ED360D /* Events.swift in Sources */,
 				E29206C92053154D0051940E /* HomeViewController.swift in Sources */,
+				E22699C5205348A700ED360D /* NetworkController.swift in Sources */,
 				E29206D9205334C10051940E /* RightMenuViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

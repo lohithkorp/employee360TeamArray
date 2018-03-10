@@ -208,10 +208,10 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="G0Q-L5-CLl">
-                                <rect key="frame" x="784" y="20" width="328" height="814"/>
+                                <rect key="frame" x="818" y="20" width="294" height="814"/>
                                 <color key="backgroundColor" red="1" green="1" blue="0.55217978400000001" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="328" id="Tuq-Uq-L4F"/>
+                                    <constraint firstAttribute="width" constant="294" id="Tuq-Uq-L4F"/>
                                 </constraints>
                             </tableView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VHZ-uq-t3n">
@@ -304,7 +304,7 @@
                             <constraint firstItem="cnI-5P-zEJ" firstAttribute="trailing" secondItem="G0Q-L5-CLl" secondAttribute="trailing" id="uDP-Uj-QJj"/>
                             <constraint firstItem="0t2-eY-XvH" firstAttribute="leading" secondItem="cJA-p4-rYP" secondAttribute="leading" id="wAi-vk-she"/>
                             <constraint firstItem="fIn-D4-7cP" firstAttribute="leading" secondItem="VHZ-uq-t3n" secondAttribute="trailing" constant="120" id="wPq-hO-CKU"/>
-                            <constraint firstItem="G0Q-L5-CLl" firstAttribute="leading" secondItem="cJA-p4-rYP" secondAttribute="trailing" constant="70" id="yhH-JV-kY0"/>
+                            <constraint firstItem="G0Q-L5-CLl" firstAttribute="leading" secondItem="cJA-p4-rYP" secondAttribute="trailing" constant="104" id="yhH-JV-kY0"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="cnI-5P-zEJ"/>
                     </view>
@@ -314,6 +314,7 @@
                         <outlet property="quickLink3Button" destination="cJA-p4-rYP" id="Ta7-Hm-Z1g"/>
                         <outlet property="quickLink4Button" destination="JZz-be-SVJ" id="pN7-56-IuV"/>
                         <outlet property="quickLink5Button" destination="pz1-IJ-TGK" id="aOU-9b-FmN"/>
+                        <outlet property="tableView" destination="G0Q-L5-CLl" id="sCf-dt-i7q"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ibH-Gn-MXW" userLabel="First Responder" sceneMemberID="firstResponder"/>

@@ -18,13 +18,11 @@ class ViewController: UIViewController {
         let homeViewController = storyboard.instantiateViewController(withIdentifier: "HomeViewController") as! HomeViewController
         
         let sideMenu = SSASideMenu(contentViewController: UINavigationController(rootViewController: homeViewController), leftMenuViewController: LeftMenuViewController())
-//        sideMenu.backgroundImage = UIImage(named: "Background.jpg")
         sideMenu.configure(SSASideMenu.MenuViewEffect(fade: true, scale: true, scaleBackground: false))
         sideMenu.configure(SSASideMenu.ContentViewEffect(alpha: 1.0, scale: 0.7))
         sideMenu.configure(SSASideMenu.ContentViewShadow(enabled: true, color: UIColor.black, opacity: 0.6, radius: 6.0))
         
         self.present(sideMenu, animated: true, completion: nil)
-        
     }
     
     override func viewDidLoad() {
