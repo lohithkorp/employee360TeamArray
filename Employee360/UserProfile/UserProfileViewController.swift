@@ -78,7 +78,7 @@ class UserProfileViewController: UIViewController, UITextFieldDelegate, UIPicker
             let imag = UIImagePickerController()
             imag.delegate = self
             imag.sourceType = UIImagePickerControllerSourceType.photoLibrary
-            //imag.mediaTypes = [kUTTypeImage];
+            
             imag.allowsEditing = false
             self.present(imag, animated: true, completion: nil)
         }
@@ -86,7 +86,6 @@ class UserProfileViewController: UIViewController, UITextFieldDelegate, UIPicker
 
     func imagePickerController(picker: UIImagePickerController!, didFinishPickingImage image: UIImage!, editingInfo: NSDictionary!) {
         let selectedImage : UIImage = image
-        //var tempImage:UIImage = editingInfo[UIImagePickerControllerOriginalImage] as UIImage
         img.image=selectedImage
         self.dismiss(animated: true, completion: nil)
     }

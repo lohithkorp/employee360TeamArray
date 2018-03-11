@@ -10,13 +10,11 @@ import Foundation
 import UIKit
 
 class RightMenuViewController: UIViewController {
-    
-    
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
         
-        
     }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -24,11 +22,4 @@ class RightMenuViewController: UIViewController {
         //view.addSubview(tableView)
         
     }
-    
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
-    
-    
 }
