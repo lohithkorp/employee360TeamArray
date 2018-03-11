@@ -129,7 +129,7 @@ class UserProfileViewController: UIViewController, UITextFieldDelegate, UIPicker
     
     override func viewWillAppear(_ animated: Bool) {
         if let userId = userId {
-            let url = "http://10.184.179.116:8080/events/webapi/employee?empId=\(userId)"
+            let url = "http://10.184.179.120:8080/events/webapi/employee?empId=\(userId)"
             self.fetchEmployeeDetails(url: url)
         }
     }

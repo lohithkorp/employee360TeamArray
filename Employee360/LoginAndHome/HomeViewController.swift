@@ -46,7 +46,7 @@ class HomeViewController: UIViewController, UITableViewDelegate, UITableViewData
     }
     
     override func viewWillAppear(_ animated: Bool) {
-        let url = "http://10.184.179.116:8080/events/webapi/event"
+        let url = "http://10.184.179.120:8080/events/webapi/event"
         self.fetchEventDetails(url: url)
     }
     

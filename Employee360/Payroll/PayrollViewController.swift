@@ -24,7 +24,7 @@ class PayrollViewController: UIViewController, UIDocumentInteractionControllerDe
     }
     
     @IBAction func downloadForm16BtnAction(_ sender: Any) {
-        let url = "http://10.184.179.116:8080/events/webapi/form16?empId=1B90&year=2017"
+        let url = "http://10.184.179.120:8080/events/webapi/form16?empId=1B90&year=2017"
         networkController.getPdfFile(url: url) { result in
             switch result {
             case .success(let fileData):
